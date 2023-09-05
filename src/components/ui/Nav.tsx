@@ -21,11 +21,7 @@ export default function Nav({ items, active }: NavProps) {
   return (
     <div className="w-auto flex justify-between items-center h-16">
       {items?.length && (
-        <nav
-          className="hidden gap-6 md:flex mr-4 bg-gradient-to-r from-[#2f55a8] via-[#4343cf] to-[#6a3bb5]
-        
-        dark:from-[#4c76d0] dark:via-[#6767fb] dark:to-[#9866ea] bg-clip-text"
-        >
+        <nav className="hidden gap-6 md:flex mr-4 bg-gradient-to-r from-[#2f55a8] via-[#4343cf] to-[#6a3bb5] dark:from-[#4c76d0] dark:via-[#6767fb] dark:to-[#9866ea] bg-clip-text">
           {items.map(
             (item, index) =>
               item.href && (
