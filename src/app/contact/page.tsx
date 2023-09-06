@@ -127,7 +127,7 @@ export default function Contact() {
               className={`w-1/2 duration-300 transition ease-in-out  border-[1px] rounded-md p-[4px] mt-2 ${
                 formState.isValid
                   ? "text-foreground hover:scale-105 border-foreground"
-                  : "border-red-600 text-red-600"
+                  : "border-red-600 text-red-600 blur-[1px]"
               }`}
               onClick={notify}
             >

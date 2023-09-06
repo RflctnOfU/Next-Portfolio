@@ -1,23 +1,17 @@
-"use client";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
+
 import ThemeToggle from "./ThemeToggle";
 import { NavItem } from "../../../types/nav";
-// import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import Burger from "./Burger";
+
 interface NavProps {
   items?: NavItem[];
-  active: () => void;
 }
 
-export default function Nav({ items, active }: NavProps) {
+export default function Nav({ items }: NavProps) {
   const pathname = usePathname();
-  const [menu, setMenu] = useState(false);
-  const toggleMenu = () => {
-    setMenu((prev) => !prev);
-    active();
-  };
+
   return (
     <div className="w-auto flex justify-between items-center h-16">
       {items?.length && (
@@ -42,7 +36,7 @@ export default function Nav({ items, active }: NavProps) {
       )}
       <ThemeToggle />
       <div className="flex justify-center items-center md:hidden ">
-        <Burger mobile={menu} open={toggleMenu} />
+        <Burger />
       </div>
     </div>
   );

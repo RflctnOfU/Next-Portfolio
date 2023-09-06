@@ -2,10 +2,10 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-import Nav from "@/components/ui/Nav";
 import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/layout/Header";
+import Navigation from "@/components/ui/Navigation";
 
 const praktika = localFont({
   src: "./fonts/Praktika-Light.otf",
@@ -33,6 +33,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main className="h-screen w-full flex flex-col items-center justify-center">
             <Header />
+            <Navigation />
             {children}
             <Footer />
           </main>
