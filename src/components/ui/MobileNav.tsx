@@ -17,7 +17,7 @@ export default function MobileNav({ items }: NavProps) {
 
   return (
     <div
-      className={`z-[5] flex flex-col gap-4 h-screen items-center bg-gradient-to-br from-backgroundEnd to-backgroundStart bg-opacity-[95] w-full duration-700 fixed bottom-0 ease-in-out py-4  ${
+      className={`z-10 flex flex-col gap-4 h-screen items-center bg-gradient-to-br from-backgroundEnd to-backgroundStart bg-opacity-[95] w-full duration-700 fixed bottom-0 ease-in-out py-4  ${
         open
           ? "top-[78px] opacity-100 bg-opacity-100"
           : "-top-[100vh] opacity-0 bg-opacity-0"
