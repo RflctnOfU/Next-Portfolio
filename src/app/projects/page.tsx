@@ -19,8 +19,8 @@ export default async function Projects() {
   // console.log(projects[0]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-full border border-white p-4 mr-4 relative">
-      <div
+    <div className="flex flex-col items-center justify-center h-full p-4 mr-4 relative">
+      {/* <div
         className={`w-1/2 relative h-[50vh] rounded-2xl shadow-md shadow-black`}
       >
         <Image
@@ -31,6 +31,9 @@ export default async function Projects() {
           className="rounded-2xl object-cover  -z-10 w-full h-full absolute"
         />
         <p>{projects[1].description}</p>
+      </div> */}
+      <div className="flex">
+        <div></div>
       </div>
     </div>
   );

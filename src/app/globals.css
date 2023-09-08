@@ -5,14 +5,14 @@
 @layer base {
   :root {
     --foreground-rgb: 20, 20, 20;
-    --background-start-rgb: 195, 195, 195;
-    --background-end-rgb: 235, 235, 235;
+    --background-start-rgb: 175, 175, 175;
+    --background-end-rgb: 245, 245, 245;
   }
 
   .dark {
-    --foreground-rgb: 235, 235, 235;
+    --foreground-rgb: 245, 245, 245;
     --background-start-rgb: 70, 70, 70;
-    --background-end-rgb: 20, 20, 20;
+    --background-end-rgb: 10, 10, 10;
   }
   /* @media (prefers-color-scheme: dark) {
   :root {
