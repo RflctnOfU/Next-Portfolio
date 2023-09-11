@@ -20,20 +20,11 @@ export default async function Projects() {
 
   return (
     <div className="flex flex-col items-center justify-center h-full p-4 mr-4 relative">
-      {/* <div
-        className={`w-1/2 relative h-[50vh] rounded-2xl shadow-md shadow-black`}
-      >
-        <Image
-          src={projects[1].imageUrl}
-          height={400}
-          width={700}
-          alt="image"
-          className="rounded-2xl object-cover  -z-10 w-full h-full absolute"
-        />
-        <p>{projects[1].description}</p>
-      </div> */}
       <div className="flex">
-        <div></div>
+        <div>
+          <span className="hidden sm:inline">&larr;</span> Select a Project to
+          see Details <span className="sm:hidden text-[24px]">&uarr;</span>
+        </div>
       </div>
     </div>
   );

@@ -21,7 +21,12 @@ export default function Nav({ items }: NavProps) {
               item.href && (
                 <Link
                   key={index}
-                  href={item.href}
+                  target={item.href === "/resume" ? "_blank" : undefined}
+                  href={
+                    item.href === "/resume"
+                      ? "https://docs.google.com/document/d/1EbP922bEX-H04TKCCedPaPdNCTcqzmc_-TlQkWuk40g/edit?usp=sharing"
+                      : item.href
+                  }
                   className={`flex items-center text-lg text-transparent hover:dark:text-white hover:text-gray-800 hover:scale-105 ${
                     pathname === item.href
                       ? "dark:text-white text-gray-800 text-xl border-b-2 dark:border-white border-gray-800"

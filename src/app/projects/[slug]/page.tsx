@@ -9,7 +9,9 @@ async function Project({ params }: { params: { slug: string } }) {
   console.log(project);
 
   return (
-    <SlugProject project={project} />
+    <div className="w-full h-full my-4 pb-4">
+      <SlugProject project={project} />
+    </div>
     // <div className="flex flex-col h-full rounded-3xl mx-4 relative shadow-lg shadow-neutral-900 gap-4">
     //   <Image
     //     alt={project.name}

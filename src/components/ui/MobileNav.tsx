@@ -31,7 +31,12 @@ export default function MobileNav({ items }: NavProps) {
           >
             {item.href && (
               <Link
-                href={item.href}
+                href={
+                  item.href === "/resume"
+                    ? "https://docs.google.com/document/d/1EbP922bEX-H04TKCCedPaPdNCTcqzmc_-TlQkWuk40g/edit?usp=sharing"
+                    : item.href
+                }
+                target={item.href === "/resume" ? "_blank" : undefined}
                 onClick={handleOpen}
                 className={`flex items-center text-lg text-transparent hover:dark:text-white hover:text-gray-800 hover:scale-105 ${
                   pathname === item.href
