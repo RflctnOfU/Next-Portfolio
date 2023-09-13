@@ -20,8 +20,10 @@ export default function Home() {
       <div>
         Check out my{" "}
         <Link href={"/projects"} className="ml-2">
-          <button className="bg-gradient-to-r from-[#2f55a8] via-[#4343cf] to-[#6a3bb5] dark:from-[#4c76d0] dark:via-[#6767fb] dark:to-[#9866ea] bg-clip-text text-transparent border border-foreground px-2 rounded-lg">
-            Projects
+          <button className="bg-gradient-to-br from-backgroundStart to-backgroundEnd px-2 rounded-lg hover:scale-105 duration-300 transition-all ease-in-out shadow-md hover:shadow-lg">
+            <span className="bg-gradient-to-br from-[#2f55a8] via-[#4343cf] to-[#6a3bb5] dark:from-[#4c76d0] dark:via-[#6767fb] dark:to-[#9866ea] bg-clip-text text-transparent">
+              Projects
+            </span>
           </button>
         </Link>
       </div>
