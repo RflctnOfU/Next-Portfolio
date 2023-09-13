@@ -61,9 +61,9 @@ export default function Contact() {
               ></input>
               <label
                 htmlFor="email"
-                className="flex gap-2 text-foreground pb-[2px]"
+                className="flex gap-2 pb-[2px] bg-gradient-to-r from-[#2f55a8] via-[#4343cf] to-[#6a3bb5] dark:from-[#4c76d0] dark:via-[#6767fb] dark:to-[#9866ea] bg-clip-text text-transparent"
               >
-                <Mail /> Email:
+                <Mail className="text-foreground" /> Email:
               </label>
               <input
                 type="text"
@@ -85,9 +85,9 @@ export default function Contact() {
             <div className="flex flex-col w-4/5">
               <label
                 htmlFor="name"
-                className="flex gap-2 text-foreground pb-[2px]"
+                className="flex gap-2 pb-[2px] bg-gradient-to-r from-[#2f55a8] via-[#4343cf] to-[#6a3bb5] dark:from-[#4c76d0] dark:via-[#6767fb] dark:to-[#9866ea] bg-clip-text text-transparent"
               >
-                <PersonStanding /> Name:
+                <PersonStanding className="text-foreground" /> Name:
               </label>
               <input
                 type="text"
@@ -106,9 +106,9 @@ export default function Contact() {
             <div className="flex flex-col w-4/5">
               <label
                 htmlFor="message"
-                className="flex gap-2 text-foreground pb-[2px]"
+                className="flex gap-2 pb-[2px] bg-gradient-to-r from-[#2f55a8] via-[#4343cf] to-[#6a3bb5] dark:from-[#4c76d0] dark:via-[#6767fb] dark:to-[#9866ea] bg-clip-text text-transparent"
               >
-                <MessageCircle /> Leave a message:
+                <MessageCircle className="text-foreground" /> Leave a message:
               </label>
               <textarea
                 className="rounded-md px-2"
