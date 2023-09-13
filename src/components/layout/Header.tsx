@@ -16,7 +16,7 @@ export default function Header() {
   const items = siteConfig.navItems;
   return (
     <MobileContext.Provider value={{ open, setOpen }}>
-      <div className="w-full m-2 h-16 flex justify-between items-center pr-4 z-20">
+      <header className="w-full h-16 flex justify-between items-center pt-4 pr-4 z-20 top-0">
         <div className="w-auto flex items-center">
           <Image
             src={theme === "dark" ? kmlogoDark : kmlogo}
@@ -28,7 +28,7 @@ export default function Header() {
           </div>
         </div>
         <Nav items={siteConfig.navItems} />
-      </div>
+      </header>
       <MobileNav items={siteConfig.navItems} />
     </MobileContext.Provider>
   );

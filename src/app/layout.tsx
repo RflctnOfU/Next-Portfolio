@@ -28,10 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`text-xl flex max-w-[1600px] m-auto justify-center items-center ${praktika.className}`}
+        className={`text-xl h-screen flex max-w-[1600px] justify-center items-center ${praktika.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main className="min-h-screen w-full flex flex-col items-center justify-center">
+          <main className="h-full w-full flex flex-col items-center justify-center">
             <Header />
             <Navigation />
             {children}

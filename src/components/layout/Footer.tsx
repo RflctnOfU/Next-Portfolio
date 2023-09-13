@@ -4,7 +4,7 @@ import sanity from "../../../public/images/Sanity.svg";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div className="w-full p-2 flex justify-around items-center">
+    <div className="w-full p-2 flex justify-around items-center bottom-0">
       <div className="flex gap-8">
         <Link href={"https://www.github.com/RflctnOfU"} target="_blank">
           <Github className="hover:scale-105 hover:text-[#4c76d0] dark:hover:text-[#4c76d0] duration-300 transition-all ease-in-out dark:text-gray-300 text-gray-600" />
