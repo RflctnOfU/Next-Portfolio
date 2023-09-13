@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`text-xl flex max-w-[1600px] m-auto justify-center items-center ${praktika.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main className="h-screen w-full flex flex-col items-center justify-center">
+          <main className="min-h-screen w-full flex flex-col items-center justify-center">
             <Header />
             <Navigation />
             {children}
