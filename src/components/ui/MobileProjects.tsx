@@ -15,7 +15,7 @@ export default function MobileProjects({ items }: Projects) {
   const pathname = usePathname();
   console.log(items);
   return (
-    <div className="w-full mx-4 h-24 rounded-lg flex sm:hidden backdrop-blur-sm">
+    <div className="w-full mx-4 h-24 rounded-lg flex md:hidden backdrop-blur-sm">
       <Swiper
         spaceBetween={20}
         slidesPerView={3}

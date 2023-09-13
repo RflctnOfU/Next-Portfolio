@@ -130,7 +130,7 @@ function SlugProject({ project }: Project) {
           </div>
         </div>
       </div> */}
-      <div className="hidden sm:flex flex-col h-full rounded-3xl ml-4  gap-4 text-neutral-300 ">
+      <div className="hidden md:flex flex-col h-full rounded-3xl ml-4  gap-4 text-neutral-300 ">
         <div className="w-full h-1/5 flex flex-col justify-center items-start">
           <h1 className="text-5xl text-transparent bg-gradient-to-r from-[#2f55a8] via-[#4343cf] to-[#6a3bb5] dark:from-[#4c76d0] dark:via-[#6767fb] dark:to-[#9866ea] bg-clip-text">
             {project.name.toUpperCase()}
@@ -191,7 +191,7 @@ function SlugProject({ project }: Project) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:hidden w-full h-full rounded-xl shadow-md shadow-neutral-900 bg-gradient-to-t from-backgroundStart to-backgroundEnd">
+      <div className="flex flex-col md:hidden w-full h-full rounded-xl shadow-md shadow-neutral-900 bg-gradient-to-t from-backgroundStart to-backgroundEnd">
         <div className="flex-[3] rounded-t-xl relative w-full">
           <Image
             src={project.imageUrl}

@@ -25,8 +25,7 @@ export default async function Layout({
 }) {
   // const [active, setActive] = useState(false);
   const projects: ProjectItems[] = await client.fetch(
-    `*[_type == 'project']{name, order, description, repo, link, "slug": slug.current, "imageUrl": image.asset->url} | order(order asc)`,
-    { cache: "no-store" }
+    `*[_type == 'project']{name, order, description, repo, link, "slug": slug.current, "imageUrl": image.asset->url} | order(order asc)`
   );
 
   // const handleClick = () => {
@@ -34,7 +33,7 @@ export default async function Layout({
   // };
 
   return (
-    <div className="flex sm:flex-row flex-col w-full p-4 items-center justify-center h-full ">
+    <div className="flex md:flex-row flex-col w-full p-4 items-center justify-center h-full ">
       {/* <div className="flex-[2] flex flex-col items-center justify-center p-4 gap-4 h-full">
         <ProjectCard
           id={1}
@@ -63,7 +62,7 @@ export default async function Layout({
       </div> */}
       <MobileProjects items={projects} />
       <Projects items={projects} />
-      <div className="sm:flex-[8] h-full w-full">{children}</div>
+      <div className="md:flex-[8] h-full w-full">{children}</div>
     </div>
   );
 }
